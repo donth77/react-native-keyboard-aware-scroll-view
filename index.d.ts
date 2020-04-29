@@ -9,6 +9,7 @@ import {
   FlatListProps,
   SectionListProps
 } from 'react-native'
+import listenToKeyboardEvents from './lib/KeyboardAwareHOC'
 
 interface KeyboardAwareProps {
   /**
@@ -182,3 +183,4 @@ export class KeyboardAwareSectionList extends ScrollableComponent<
   KeyboardAwareSectionListProps<any>,
   KeyboardAwareState
 > {}
+export { listenToKeyboardEvents };
