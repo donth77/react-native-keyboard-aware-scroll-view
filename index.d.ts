@@ -144,13 +144,13 @@ interface KeyboardAwareProps {
   onKeyboardDidChangeFrame?: (frames: Object) => void
 }
 
-interface KeyboardAwareScrollViewProps
+export interface KeyboardAwareScrollViewProps
   extends KeyboardAwareProps,
     ScrollViewProps {}
-interface KeyboardAwareFlatListProps<ItemT>
+export interface KeyboardAwareFlatListProps<ItemT>
   extends KeyboardAwareProps,
     FlatListProps<ItemT> {}
-interface KeyboardAwareSectionListProps<ItemT>
+export interface KeyboardAwareSectionListProps<ItemT>
   extends KeyboardAwareProps,
     SectionListProps<ItemT> {}
 
